@@ -1,23 +1,19 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './pages/Home';
-import EcologicalIssues from './pages/EcologicalIssues';
-import KeyFigures from './pages/KeyFigures';
-import EcoAlternatives from './pages/EcoAlternatives';
-import Quiz from './pages/Quiz';
+import routes from './routes';
 
 function App() {
   return (
     <Router>
       <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/enjeux" element={<EcologicalIssues />} />
-          <Route path="/chiffres" element={<KeyFigures />} />
-          <Route path="/alternatives" element={<EcoAlternatives />} />
-          <Route path="/quiz" element={<Quiz />} />
-        </Routes>
+        <Suspense fallback={<div>Chargement...</div>}>
+          <Routes>
+            {routes.map((route: { path: string; element: React.ReactElement }) => (
+              <Route key={route.path} path={route.path} element={route.element} />
+            ))}
+          </Routes>
+        </Suspense>
       </Layout>
     </Router>
   );
