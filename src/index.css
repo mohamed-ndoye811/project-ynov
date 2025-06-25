@@ -61,7 +61,7 @@
 
 @keyframes breathe {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  50% { transform: scale(1.03); }
 }
 
 @keyframes shimmer {
@@ -79,7 +79,7 @@
 }
 
 .animate-grow-leaf {
-  animation: grow-leaf 2s ease-out;
+  animation: grow-leaf 0.8s ease-out;
 }
 
 .animate-wave {
@@ -99,7 +99,7 @@
 }
 
 .animate-breathe {
-  animation: breathe 4s ease-in-out infinite;
+  animation: breathe 2s ease-in-out infinite;
 }
 
 .animate-shimmer {
@@ -148,7 +148,7 @@
     radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,0.1), transparent);
   background-repeat: repeat;
   background-size: 200px 100px;
-  animation: wave 20s linear infinite;
+  animation: wave 10s linear infinite;
   pointer-events: none;
 }
 

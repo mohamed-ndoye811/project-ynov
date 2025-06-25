@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { AlertTriangle, TrendingUp, Server, Zap, Leaf } from 'lucide-react';
-import AnimatedSection from '../components/AnimatedSection';
+import React from "react";
+import { Link } from "react-router-dom";
+import { AlertTriangle, TrendingUp, Server, Zap, Leaf } from "lucide-react";
+import AnimatedSection from "../components/AnimatedSection";
 
 const Home: React.FC = () => {
   return (
@@ -14,12 +14,15 @@ const Home: React.FC = () => {
             <div className="animate-fade-in-up">
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 L'Intelligence Artificielle
-                <span className="block text-red-400 animate-pulse-green">Cache une Réalité Alarmante</span>
+                <span className="block text-red-400 animate-pulse-green">
+                  Cache une Réalité Alarmante
+                </span>
               </h1>
             </div>
             <div className="animate-fade-in-up animate-delay-300">
               <p className="text-xl lg:text-2xl mb-8 text-stone-200 max-w-3xl mx-auto leading-relaxed">
-                Derrière les promesses de l'IA se cache un coût environnemental dramatique que l'industrie tech préfère taire.
+                Derrière les promesses de l'IA se cache un coût environnemental
+                dramatique que l'industrie tech préfère taire.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-500">
@@ -38,7 +41,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Floating icons */}
         <div className="absolute top-20 left-10 animate-float">
           <Leaf className="w-8 h-8 text-green-400 opacity-30" />
@@ -59,23 +62,31 @@ const Home: React.FC = () => {
               Des Chiffres qui Font Froid dans le Dos
             </h2>
             <p className="text-xl text-stone-600 max-w-3xl mx-auto">
-              L'empreinte carbone de l'IA explose silencieusement, pendant que nous célébrons ses prouesses.
+              L'empreinte carbone de l'IA explose silencieusement, pendant que
+              nous célébrons ses prouesses.
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <AnimatedSection delay={100} className="bg-red-50 p-6 rounded-xl border-l-4 border-red-500 hover-grow">
+            <AnimatedSection
+              delay={100}
+              className="bg-red-50 p-6 rounded-xl border-l-4 border-red-500 hover-grow"
+            >
               <div className="flex items-center justify-between mb-4">
                 <Server className="w-12 h-12 text-red-600 animate-pulse-green" />
                 <AlertTriangle className="w-6 h-6 text-red-500 animate-wave" />
               </div>
               <h3 className="text-2xl font-bold text-red-700 mb-2">626 TWh</h3>
               <p className="text-stone-700">
-                Consommation annuelle des data centers mondiaux - équivalent à la consommation de la France
+                Consommation annuelle des data centers mondiaux - équivalent à
+                la consommation de la France
               </p>
             </AnimatedSection>
 
-            <AnimatedSection delay={200} className="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500 hover-grow">
+            <AnimatedSection
+              delay={200}
+              className="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500 hover-grow"
+            >
               <div className="flex items-center justify-between mb-4">
                 <TrendingUp className="w-12 h-12 text-orange-600 animate-pulse-green" />
                 <AlertTriangle className="w-6 h-6 text-orange-500 animate-wave" />
@@ -86,25 +97,35 @@ const Home: React.FC = () => {
               </p>
             </AnimatedSection>
 
-            <AnimatedSection delay={300} className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500 hover-grow">
+            <AnimatedSection
+              delay={300}
+              className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500 hover-grow"
+            >
               <div className="flex items-center justify-between mb-4">
                 <Zap className="w-12 h-12 text-yellow-600 animate-pulse-green" />
                 <AlertTriangle className="w-6 h-6 text-yellow-500 animate-wave" />
               </div>
-              <h3 className="text-2xl font-bold text-yellow-700 mb-2">552 tonnes</h3>
+              <h3 className="text-2xl font-bold text-yellow-700 mb-2">
+                552 tonnes
+              </h3>
               <p className="text-stone-700">
-                CO2 émis pour l'entraînement d'un seul modèle de langage comme GPT-3
+                CO2 émis pour l'entraînement d'un seul modèle de langage comme
+                GPT-3
               </p>
             </AnimatedSection>
 
-            <AnimatedSection delay={400} className="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-500 hover-grow">
+            <AnimatedSection
+              delay={400}
+              className="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-500 hover-grow"
+            >
               <div className="flex items-center justify-between mb-4">
                 <Server className="w-12 h-12 text-purple-600 animate-pulse-green" />
                 <AlertTriangle className="w-6 h-6 text-purple-500 animate-wave" />
               </div>
               <h3 className="text-2xl font-bold text-purple-700 mb-2">4%</h3>
               <p className="text-stone-700">
-                Part du numérique dans les émissions mondiales de GES, en croissance exponentielle
+                Part du numérique dans les émissions mondiales de GES, en
+                croissance exponentielle
               </p>
             </AnimatedSection>
           </div>
@@ -125,9 +146,13 @@ const Home: React.FC = () => {
                     <AlertTriangle className="w-4 h-4 text-red-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg text-forest-900 mb-2">Consommation énergétique exponentielle</h3>
+                    <h3 className="font-semibold text-lg text-forest-900 mb-2">
+                      Consommation énergétique exponentielle
+                    </h3>
                     <p className="text-stone-600">
-                      Les data centers consomment déjà 1% de l'électricité mondiale. L'IA pourrait tripler cette consommation d'ici 2030.
+                      Les data centers consomment déjà 1% de l'électricité
+                      mondiale. L'IA pourrait tripler cette consommation d'ici
+                      2030.
                     </p>
                   </div>
                 </div>
@@ -137,9 +162,12 @@ const Home: React.FC = () => {
                     <AlertTriangle className="w-4 h-4 text-red-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg text-forest-900 mb-2">Extraction minière intensive</h3>
+                    <h3 className="font-semibold text-lg text-forest-900 mb-2">
+                      Extraction minière intensive
+                    </h3>
                     <p className="text-stone-600">
-                      Terres rares, lithium, cobalt : l'IA nécessite des matériaux dont l'extraction ravage les écosystèmes.
+                      Terres rares, lithium, cobalt : l'IA nécessite des
+                      matériaux dont l'extraction ravage les écosystèmes.
                     </p>
                   </div>
                 </div>
@@ -149,9 +177,12 @@ const Home: React.FC = () => {
                     <AlertTriangle className="w-4 h-4 text-red-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg text-forest-900 mb-2">Déchets électroniques croissants</h3>
+                    <h3 className="font-semibold text-lg text-forest-900 mb-2">
+                      Déchets électroniques croissants
+                    </h3>
                     <p className="text-stone-600">
-                      Obsolescence rapide des équipements, pollution toxique, recyclage insuffisant : un cercle vicieux destructeur.
+                      Obsolescence rapide des équipements, pollution toxique,
+                      recyclage insuffisant : un cercle vicieux destructeur.
                     </p>
                   </div>
                 </div>
@@ -168,9 +199,14 @@ const Home: React.FC = () => {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection animation="slide-right" className="bg-gradient-to-br from-red-600 to-orange-600 p-8 rounded-2xl text-white relative overflow-hidden">
+            <AnimatedSection
+              animation="slide-right"
+              className="bg-gradient-to-br from-red-600 to-orange-600 p-8 rounded-2xl text-white relative overflow-hidden"
+            >
               <div className="absolute inset-0 animate-shimmer opacity-10"></div>
-              <h3 className="text-2xl font-bold mb-6">Impact d'une simple recherche IA</h3>
+              <h3 className="text-2xl font-bold mb-6">
+                Impact d'une simple recherche IA
+              </h3>
               <div className="space-y-4">
                 <div className="bg-white bg-opacity-20 p-4 rounded-lg hover-leaf">
                   <div className="text-3xl font-bold">4,32g CO2</div>
@@ -178,15 +214,20 @@ const Home: React.FC = () => {
                 </div>
                 <div className="bg-white bg-opacity-20 p-4 rounded-lg hover-leaf">
                   <div className="text-3xl font-bold">×10</div>
-                  <div className="text-sm opacity-90">Plus qu'une recherche Google</div>
+                  <div className="text-sm opacity-90">
+                    Plus qu'une recherche Google
+                  </div>
                 </div>
                 <div className="bg-white bg-opacity-20 p-4 rounded-lg hover-leaf">
                   <div className="text-3xl font-bold">1,7 billion</div>
-                  <div className="text-sm opacity-90">Requêtes IA par jour dans le monde</div>
+                  <div className="text-sm opacity-90">
+                    Requêtes IA par jour dans le monde
+                  </div>
                 </div>
               </div>
               <p className="text-sm mt-4 opacity-90">
-                Soit l'équivalent de 7 300 tonnes de CO2 par jour, uniquement pour les requêtes textuelles.
+                Soit l'équivalent de 7 300 tonnes de CO2 par jour, uniquement
+                pour les requêtes textuelles.
               </p>
             </AnimatedSection>
           </div>
@@ -201,8 +242,9 @@ const Home: React.FC = () => {
               Il Est Temps d'Agir Avant qu'il ne Soit Trop Tard
             </h2>
             <p className="text-xl mb-8 text-green-100">
-              L'industrie tech nous vend le rêve d'un futur connecté, mais à quel prix pour notre planète ? 
-              Découvrez les alternatives et testez vos connaissances pour un numérique vraiment responsable.
+              L'industrie tech nous vend le rêve d'un futur connecté, mais à
+              quel prix pour notre planète ? Découvrez les alternatives et
+              testez vos connaissances pour un numérique vraiment responsable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -220,7 +262,7 @@ const Home: React.FC = () => {
             </div>
           </AnimatedSection>
         </div>
-        
+
         {/* Floating elements */}
         <div className="absolute top-10 left-10 animate-float animate-delay-100">
           <div className="w-4 h-4 bg-green-400 rounded-full opacity-20"></div>
