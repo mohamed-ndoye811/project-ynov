@@ -5,10 +5,10 @@ import AnimatedSection from "../components/AnimatedSection";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <main>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-forest-900 via-forest-800 to-green-900 text-white floating-particles overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+      <header className="relative bg-gradient-to-br from-forest-900 via-forest-800 to-green-900 text-white floating-particles overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-40" aria-hidden="true"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center">
             <div className="animate-fade-in-up">
@@ -25,40 +25,42 @@ const Home: React.FC = () => {
                 dramatique que l'industrie tech préfère taire.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-500">
-              <Link
-                to="/enjeux"
-                className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                Découvrir les impacts
-              </Link>
-              <Link
-                to="/chiffres"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-forest-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105"
-              >
-                Voir les chiffres
-              </Link>
-            </div>
+            <nav aria-label="Accès rapide">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-500">
+                <Link
+                  to="/enjeux"
+                  className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                >
+                  Découvrir les impacts
+                </Link>
+                <Link
+                  to="/chiffres"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-forest-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105"
+                >
+                  Voir les chiffres
+                </Link>
+              </div>
+            </nav>
           </div>
         </div>
 
         {/* Floating icons */}
-        <div className="absolute top-20 left-10 animate-float">
+        <div className="absolute top-20 left-10 animate-float" aria-hidden="true">
           <Leaf className="w-8 h-8 text-green-400 opacity-30" />
         </div>
-        <div className="absolute top-40 right-20 animate-float animate-delay-200">
+        <div className="absolute top-40 right-20 animate-float animate-delay-200" aria-hidden="true">
           <Server className="w-6 h-6 text-red-400 opacity-30" />
         </div>
-        <div className="absolute bottom-20 left-20 animate-float animate-delay-100">
+        <div className="absolute bottom-20 left-20 animate-float animate-delay-100" aria-hidden="true">
           <Zap className="w-7 h-7 text-yellow-400 opacity-30" />
         </div>
-      </section>
+      </header>
 
       {/* Alarming Stats Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" aria-labelledby="stats-title">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-forest-900 mb-4">
+            <h2 id="stats-title" className="text-3xl lg:text-4xl font-bold text-forest-900 mb-4">
               Des Chiffres qui Font Froid dans le Dos
             </h2>
             <p className="text-xl text-stone-600 max-w-3xl mx-auto">
@@ -133,7 +135,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Problem Overview */}
-      <section className="py-16 bg-stone-100">
+      <section className="py-16 bg-stone-100" aria-labelledby="problem-title">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection animation="slide-left">
@@ -235,10 +237,10 @@ const Home: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-green-700 to-forest-800 text-white relative overflow-hidden floating-particles">
+      <section className="py-16 bg-gradient-to-r from-green-700 to-forest-800 text-white relative overflow-hidden floating-particles" aria-labelledby="cta-title">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedSection>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 id="cta-title" className="text-3xl lg:text-4xl font-bold mb-6">
               Il Est Temps d'Agir Avant qu'il ne Soit Trop Tard
             </h2>
             <p className="text-xl mb-8 text-green-100">
@@ -246,32 +248,34 @@ const Home: React.FC = () => {
               quel prix pour notre planète ? Découvrez les alternatives et
               testez vos connaissances pour un numérique vraiment responsable.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/alternatives"
-                className="bg-white text-forest-800 hover:bg-stone-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
-              >
-                Découvrir les alternatives
-              </Link>
-              <Link
-                to="/quiz"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-forest-800 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105"
-              >
-                Tester mes connaissances
-              </Link>
-            </div>
+            <nav aria-label="Appels à l'action">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  to="/alternatives"
+                  className="bg-white text-forest-800 hover:bg-stone-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                >
+                  Découvrir les alternatives
+                </Link>
+                <Link
+                  to="/quiz"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-forest-800 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105"
+                >
+                  Tester mes connaissances
+                </Link>
+              </div>
+            </nav>
           </AnimatedSection>
         </div>
 
         {/* Floating elements */}
-        <div className="absolute top-10 left-10 animate-float animate-delay-100">
+        <div className="absolute top-10 left-10 animate-float animate-delay-100" aria-hidden="true">
           <div className="w-4 h-4 bg-green-400 rounded-full opacity-20"></div>
         </div>
-        <div className="absolute bottom-20 right-10 animate-float animate-delay-300">
+        <div className="absolute bottom-20 right-10 animate-float animate-delay-300" aria-hidden="true">
           <div className="w-6 h-6 bg-white rounded-full opacity-10"></div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 
