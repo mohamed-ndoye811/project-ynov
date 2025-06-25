@@ -79,7 +79,7 @@
 }
 
 .animate-grow-leaf {
-  animation: grow-leaf 0.8s ease-out;
+  animation: grow-leaf 0.4s ease-out;
 }
 
 .animate-wave {
@@ -99,7 +99,7 @@
 }
 
 .animate-breathe {
-  animation: breathe 2s ease-in-out infinite;
+  animation: breathe 1.4s ease-in-out infinite;
 }
 
 .animate-shimmer {
