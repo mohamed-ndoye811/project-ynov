@@ -120,7 +120,7 @@
 }
 
 .hover-grow:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .hover-leaf {
@@ -128,7 +128,7 @@
 }
 
 .hover-leaf:hover {
-  transform: rotate(2deg) scale(1.02);
+  transform: rotate(1deg) scale(1.02);
   filter: brightness(1.1);
 }
 
